@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
@@ -13,9 +13,12 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
+
+
 
 <body>
   <!--[if IE]>
@@ -23,11 +26,65 @@
   <![endif]-->
 
 
+  <div class="nav">
+    <div class="nav--content">
+      <div class="nav--title">
+        <p>Alen Kuca</p>
+      </div>
+      <div class="nav--navigation">
+        <div class="nav--triangle nav--triangle--active"></div>
+        <div class="nav--triangle"></div>
+        <div class="nav--triangle"></div>
+        <div class="nav--triangle"></div>
+      </div>
+      <div class="nav--scroll--down">
+        <p>SCROLL</p>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
 
-
-
-  <p>Clean</p>
-
+  <div id="fullpage">
+    <div class="section section--one">
+      <div class="section--one--wrapper">
+        <div class="main--title">
+          <div class="main--name">
+            <h1>ALEN</h1>
+            <h1>KUCA</h1>
+          </div>
+          <div class="main--subtitle">
+            <p>web designer /</p>
+            <p>developer.</p>
+          </div>
+        </div>
+        <div class="mountain--image">
+          <img alt="mountain" src="./img/mountain.svg">
+        </div>
+      </div>
+    </div>
+    <div class="section section--two">
+      <div class="section--two--wrapper">
+        <div class="main--title">
+          <div class="main--name">
+            <h1>LATEST</h1>
+            <h1>PROJECT</h1>
+          </div>
+          <div class="main--subtitle">
+            <button class="view--all--button">view all</button>
+          </div>
+        </div>
+        <div class="latest--project--image">
+          <div class="latest--project--image--wrapper">
+            <img class="latest--project--image--main" alt="altposit" src="./img/latestProject.png">
+            <img class="latest--project--image--back" alt="altposit" src="./img/latestProjectBack.png">
+            <img class="latest--project--image--back--last" alt="altposit" src="./img/latestProjectBackLast.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
 
 
 
@@ -51,7 +108,18 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script>
+    new fullpage("#fullpage", {
+        autoScrolling:true,
+        scrollBar: false,
+        lazyLoading:true
+    })
+  </script>
 </body>
 
 </html>
