@@ -415,24 +415,8 @@ body{
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-right: 100px;
+  width: 100%;
 }
-
-.latest--project--image--main{
-  width: 85%;
-  padding-right: 70px;
-  z-index: 3;
-}
-
-.latest--project--image--back{
-  position: absolute;
-  width: 85%;
-  top: -70px;
-  right: 45px;
-  z-index: 2;
-  opacity: 0.2;
-}
-
 
 .main--title{
   margin-left:200px;
@@ -481,7 +465,6 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 100px;
 }
 
 .latest--project--description h2,p{
@@ -519,9 +502,52 @@ body{
   background: #FF4D4D;
 }
 
+.vertical--line--project{
+  width: 55px;
+  height: 6px;
+  background: #FF4D4D;
+  bottom: 0;
+  position: absolute;
+  left: 45px;
+}
+
 .contact--link{
   display: flex;
   align-items: center;
   height: 45px;
   font-size:20px;
+}
+
+.latest--project--subtitle{
+  margin-left: 200px;
+  margin-top: 0;
+  color: #FF4D4D;
+  font-size: 19px;
+}
+
+.latest--projects--container{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.project--wrapper{
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+
+.project--second{
+  position: absolute;
+  left: 30%;
+  opacity: 0.4;
+  top: 60%;
+}
+
+.project--third{
+  position: absolute;
+  left: 30%;
+  opacity: 0.1;
+  top: 80%;
 }
