@@ -32,9 +32,9 @@
         <p>Alen Kuca</p>
       </div>
       <div class="nav--navigation">
-        <div class="nav--triangle nav--triangle--active"></div>
-        <div class="nav--triangle"></div>
-        <div class="nav--triangle"></div>
+        <div class="nav--triangle triangle--one"></div>
+        <div class="nav--triangle triangle--two"></div>
+        <div class="nav--triangle triangle--three"></div>
       </div>
       <div class="nav--scroll--down">
         <p>SCROLL</p>
@@ -48,25 +48,66 @@
       <div class="section--one--wrapper">
         <div class="main--title">
           <div class="main--name">
-            <h1>ALEN</h1>
-            <h1>KUCA</h1>
+            <h1 class="title--line--one">ALEN</h1>
+            <h1 class="title--line--two">KUCA</h1>
           </div>
-          <div class="main--subtitle">
+          <div class="main--subtitle name--subtitle">
             <p>web designer /</p>
             <p>developer.</p>
           </div>
         </div>
         <div class="mountain--image">
-          <img alt="mountain" src="./img/mountain.svg">
+          <svg class="mountain" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+               viewBox="0 0 1120.344 1011.521">
+            <defs>
+              <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ff4d4d"/>
+                <stop offset="1" stop-color="#802727"/>
+              </linearGradient>
+              <linearGradient id="c" x1="0.061" y1="0.787" x2="0.818" y2="0.357" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#a5ceff" stop-opacity="0.102"/>
+                <stop offset="1" stop-color="#003b80" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="f" x1="0.011" y1="0.43" x2="0.918" y2="0.652" xlink:href="#a"/>
+              <linearGradient id="g" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ff4d4d"/>
+                <stop offset="1" stop-color="#982929"/>
+              </linearGradient>
+              <linearGradient id="h" x1="0.014" y1="0.529" x2="0.98" y2="0.589" xlink:href="#a"/>
+              <linearGradient id="i" x1="0.527" y1="0.618" x2="0.148" y2="0.844" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ff4d4d"/>
+                <stop offset="1" stop-color="#ff7b7b"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(-780.848 -68.479)">
+              <path d="M-1267.153,5135-843.7,4569.479h86.946l238.3-297.869,37.032,37.032,125.588-185.162,227.025,421.848V5135Z" transform="translate(2048 -4055)" fill="#285487"/>
+              <path d="M-2399.915,4123.479l-80.981,119.958-45.731,67.644-37.156,58.116,71.454-42.873,11.433,75.265,54.305-61.927,32.393,80.029,40.967-72.407,33.345,34.3,4.764-48.589,53.353,48.589-138.145-253.425Z"
+                    transform="translate(4093 -4055)" fill="#fff" opacity="0.89"/>
+              <path d="M-2563.783,6719.585l-88.84,111.23,37.289-17.764,1.2,26.449,32.19-30.785,5.51,25.653,12.9-17.246,38.4-60.011Z" transform="translate(4093 -6503)" fill="#fff" opacity="0.57"/>
+              <g class="human">
+                <rect class="laptop-keyboard" width="43" height="6" rx="3" transform="translate(1160 491)" fill="url(#a)"/>
+                <rect class="laptop-screen" width="6" height="33" rx="3" transform="translate(1148.792 462.875) rotate(-19)" fill="url(#a)"/>
+                <path class="laptop-light" d="M-9593.657,6966.733l40.719-38.219,25.9,52.506-57.687,13.038Z" transform="translate(10749 -6503)" fill="url(#c)"/>
+                <rect class="leg" width="44" height="11" rx="5.5" transform="translate(1183 503)" fill="url(#a)"/>
+                <rect class="feet-left" width="11" height="30" rx="5.5" transform="translate(1180.04 503.789) rotate(-6)" fill="url(#a)"/>
+                <rect class="feet-right" width="11" height="30" rx="5.5" transform="translate(1180.04 503.789) rotate(-6)" fill="url(#a)"/>
+                <rect class="arm-right" width="50" height="8" rx="4" transform="matrix(0.788, -0.616, 0.616, 0.788, 1180.049, 485.855)" fill="url(#f)"/>
+                <rect class="body-human" width="17" height="70" rx="8.5" transform="translate(1211 444)" fill="url(#g)"/>
+                <rect class="arm-left" width="48" height="8" rx="4" transform="matrix(0.788, -0.616, 0.616, 0.788, 1185.625, 495.624)" fill="url(#h)"/>
+                <circle class="body-head" cx="14" cy="14" r="14" transform="translate(1198 422)" fill="url(#i)"/>
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
+
     <div class="section section--two">
       <div class="section--two--wrapper">
         <div class="main--title">
           <div class="main--name">
-            <h1>LATEST</h1>
-            <h1>PROJECTS</h1>
+            <h1 class="latest">LATEST</h1>
+            <h1 class="projects">PROJECTS</h1>
           </div>
           <div class="main--subtitle">
             <button class="view--all--button">view all</button>
@@ -74,7 +115,7 @@
         </div>
         <div class="latest--project--image">
           <div class="latest--projects--container">
-            <div class="project--wrapper">
+            <div class="project--wrapper project--first">
               <div class="latest--project--image--wrapper">
                 <div class="vertical--line--project"></div>
                 <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
@@ -99,22 +140,23 @@
         </div>
       </div>
     </div>
+
     <div class="section section--three">
       <div class="section--three--wrapper">
         <div class="main--title">
           <div class="main--name no-wrap">
-            <h1>GET IN TOUCH</h1>
+            <h1 class="touch">GET IN TOUCH</h1>
           </div>
           <div class="contact--links">
-            <div class="contact--link">
+            <div class="contact--link email">
               <div class="vertical--line"></div>
               <p>alkuca@gmail.com</p>
             </div>
-            <div class="contact--link">
+            <div class="contact--link fb">
               <div class="vertical--line"></div>
               <p>facebook</p>
             </div>
-            <div class="contact--link">
+            <div class="contact--link gh">
               <div class="vertical--line"></div>
               <p>github</p>
             </div>
@@ -125,16 +167,7 @@
         </div>
       </div>
     </div>
-    <div class="section">Some section</div>
   </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -144,6 +177,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -156,11 +191,81 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
   <script>
+
+    const disableScroll = () => {
+        fullpage_api.setAllowScrolling(false);
+        setTimeout(function(){
+            fullpage_api.setAllowScrolling(true);
+        }, 1200);
+    };
+
+
     new fullpage("#fullpage", {
         autoScrolling:true,
         scrollBar: false,
-        lazyLoading:true
+        lazyLoading:true,
+        onLeave: function(origin, destination, direction){
+          if(origin.index === 0){
+              TweenMax.to(".title--line--one",0.2,{transform:"translateX(-500px)"});
+              TweenMax.to(".title--line--two",0.2,{transform:"translateX(-500px)",delay:0.1});
+              TweenMax.to(".name--subtitle",0.2,{transform:"translateX(-500px)",delay:0.2});
+              TweenMax.to(".mountain",0.6,{transform:"translateY(100%) translateX(100%)"});
+              TweenMax.to(".human",0.5,{transform:"translateY(40px)",opacity:0});
+              TweenMax.to(".triangle--one",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+          }
+            if(origin.index === 1){
+                TweenMax.to(".triangle--two",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+                TweenMax.to(".latest",0.2,{transform:"translateX(-700px)"});
+                TweenMax.to(".projects",0.2,{transform:"translateX(-700px)",delay:0.1});
+                TweenMax.to(".view--all--button",0.2,{transform:"translateX(-500px)",delay:0.2});
+                TweenMax.to(".project--first",0.2,{transform:"translateY(200px)",opacity:0,delay:0.2});
+                TweenMax.to(".project--second",0.2,{transform:"translateY(200px)",opacity:0,delay:0.1});
+                TweenMax.to(".project--third",0.2,{transform:"translateY(200px)",opacity:0});
+            }
+            if(origin.index === 2){
+                TweenMax.to(".triangle--three",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+                TweenMax.to(".touch",0.2,{transform:"translateX(-900px)"});
+                TweenMax.to(".email",0.2,{transform:"translateY(100px)",opacity:0,delay:0.2});
+                TweenMax.to(".fb",0.2,{transform:"translateY(100px)",opacity:0,delay:0.1});
+                TweenMax.to(".gh",0.2,{transform:"translateY(100px)",opacity:0});
+            }
+        },
+        afterLoad: function(origin, destination, direction){
+          if(destination.index === 0){
+              disableScroll();
+              TweenMax.to(".triangle--one",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+              TweenMax.to(".title--line--one",0.5,{transform:"translateX(0)"});
+              TweenMax.to(".title--line--two",0.5,{transform:"translateX(0)",delay:0.25});
+              TweenMax.to(".name--subtitle",0.5,{transform:"translateX(0)",delay:0.5});
+              TweenMax.to(".mountain",0.5,{transform:"translateY(0) translateX(0)",delay:0.75});
+              TweenMax.fromTo(".human", 0.7, {y:-25,opacity:0}, {y:0,opacity:1,delay:1.2});
+              TweenMax.fromTo(".arm-right", 1, { rotation: -40,transformOrigin:"right top"}, {rotation: -37}).repeat(-1);
+              TweenMax.fromTo(".laptop-light", 1, { opacity:0.3}, {opacity:1}).repeat(-1);
+
+          }
+            if(destination.index === 1){
+                disableScroll();
+                TweenMax.to(".triangle--two",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+                TweenMax.to(".latest",0.6,{transform:"translateX(0)"});
+                TweenMax.to(".projects",0.6,{transform:"translateX(0)",delay:0.3});
+                TweenMax.to(".view--all--button",0.5,{transform:"translateX(0)",delay:0.5});
+                TweenMax.to(".project--first",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
+                TweenMax.to(".project--second",0.6,{transform:"translateY(0)",opacity:0.3,delay:0.9});
+                TweenMax.to(".project--third",0.6,{transform:"translateY(0)",opacity:0.07,delay:1.2});
+            }
+            if(destination.index === 2){
+                disableScroll();
+                TweenMax.to(".triangle--three",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+                TweenMax.to(".touch",0.75,{transform:"translateX(0)"});
+                TweenMax.to(".email",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
+                TweenMax.to(".fb",0.6,{transform:"translateY(0)",opacity:1,delay:0.9});
+                TweenMax.to(".gh",0.6,{transform:"translateY(0)",opacity:1,delay:1.2});
+            }
+        },
     })
+
+
+
   </script>
 </body>
 

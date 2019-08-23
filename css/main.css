@@ -397,10 +397,11 @@ body{
   height: 100%;
 }
 
-.mountain--image img{
+.mountain{
   height: 90%;
   position: absolute;
   bottom: 0;
+  transform: translateY(100%) translateX(100%);
 }
 
 .mountain--image{
@@ -448,6 +449,7 @@ body{
   width:135px;
   height:40px;
   margin-top:20px;
+  transform:translateX(-500px);
 }
 
 .latest--project--description{
@@ -532,22 +534,70 @@ body{
   left: 0;
 }
 
-.project--wrapper{
+.project--first{
   position: absolute;
   left: 15%;
   top: 40%;
+  opacity: 0;
+  transform: translateY(200px);
 }
 
 .project--second{
   position: absolute;
   left: 30%;
-  opacity: 0.4;
+  opacity: 0;
   top: 60%;
+  transform: translateY(200px);
 }
 
 .project--third{
   position: absolute;
   left: 30%;
-  opacity: 0.1;
+  opacity: 0;
   top: 80%;
+  transform: translateY(200px);
+}
+
+.email{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.fb{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.gh{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.title--line--one{
+  transform:translateX(-500px);
+}
+
+.title--line--two{
+  transform:translateX(-500px);
+}
+
+.name--subtitle{
+  transform:translateX(-500px);
+}
+
+.latest{
+  transform:translateX(-700px);
+}
+
+.projects{
+  transform:translateX(-700px);
+}
+
+.touch{
+  transform:translateX(-900px);
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
