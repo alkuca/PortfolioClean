@@ -115,26 +115,32 @@
         </div>
         <div class="latest--project--image">
           <div class="latest--projects--container">
-            <div class="project--wrapper project--first">
-              <div class="latest--project--image--wrapper">
-                <div class="vertical--line--project"></div>
-                <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
-              </div>
-              <p class="latest--project--subtitle">A personal cryptocurrency portfolio</p>
-            </div>
             <div class="project--wrapper project--second">
               <div class="latest--project--image--wrapper">
                 <div class="vertical--line--project"></div>
-                <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
+                <a href="https://pure-tundra-23885.herokuapp.com/"/>
+                  <img style="width:215px" class="latest--project--image--main" alt="skripte" src="./img/skripteLogo.png">
+                </a>
               </div>
-              <p class="latest--project--subtitle">A personal cryptocurrency portfolio</p>
+              <p class="latest--project--subtitle">a document sharing web application.</p>
+            </div>
+            <div class="project--wrapper project--first">
+              <div class="latest--project--image--wrapper">
+                <div class="vertical--line--project"></div>
+                <a href="https://www.altposit.com"/>
+                  <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
+                </a>
+              </div>
+              <p class="latest--project--subtitle">a personal cryptocurrency portfolio.</p>
             </div>
             <div class="project--wrapper project--third">
               <div class="latest--project--image--wrapper">
                 <div class="vertical--line--project"></div>
-                <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
+                <a href="https://gameofthronesquiz2019.000webhostapp.com"/>
+                  <img style="width:220px;" class="latest--project--image--main" alt="gameofthronesquiz" src="./img/gotLogo.png">
+                </a>
               </div>
-              <p class="latest--project--subtitle">A personal cryptocurrency portfolio</p>
+              <p class="latest--project--subtitle">a game of thrones quiz.</p>
             </div>
           </div>
         </div>
@@ -200,6 +206,9 @@
     };
 
 
+
+
+
     new fullpage("#fullpage", {
         autoScrolling:true,
         scrollBar: false,
@@ -210,7 +219,7 @@
               TweenMax.to(".title--line--two",0.2,{transform:"translateX(-500px)",delay:0.1});
               TweenMax.to(".name--subtitle",0.2,{transform:"translateX(-500px)",delay:0.2});
               TweenMax.to(".mountain",0.6,{transform:"translateY(100%) translateX(100%)"});
-              TweenMax.to(".human",0.5,{transform:"translateY(40px)",opacity:0});
+              TweenMax.to(".human",0.5,{transform:"translateY(20px)",opacity:0});
               TweenMax.to(".triangle--one",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
           }
             if(origin.index === 1){
@@ -218,8 +227,8 @@
                 TweenMax.to(".latest",0.2,{transform:"translateX(-700px)"});
                 TweenMax.to(".projects",0.2,{transform:"translateX(-700px)",delay:0.1});
                 TweenMax.to(".view--all--button",0.2,{transform:"translateX(-500px)",delay:0.2});
-                TweenMax.to(".project--first",0.2,{transform:"translateY(200px)",opacity:0,delay:0.2});
-                TweenMax.to(".project--second",0.2,{transform:"translateY(200px)",opacity:0,delay:0.1});
+                TweenMax.to(".project--first",0.2,{transform:"translateY(200px)",opacity:0,delay:0.1});
+                TweenMax.to(".project--second",0.2,{transform:"translateY(200px)",opacity:0,delay:0.2});
                 TweenMax.to(".project--third",0.2,{transform:"translateY(200px)",opacity:0});
             }
             if(origin.index === 2){
@@ -238,7 +247,7 @@
               TweenMax.to(".title--line--two",0.5,{transform:"translateX(0)",delay:0.25});
               TweenMax.to(".name--subtitle",0.5,{transform:"translateX(0)",delay:0.5});
               TweenMax.to(".mountain",0.5,{transform:"translateY(0) translateX(0)",delay:0.75});
-              TweenMax.fromTo(".human", 0.7, {y:-25,opacity:0}, {y:0,opacity:1,delay:1.2});
+              TweenMax.fromTo(".human", 0.7, {y:-15,opacity:0}, {y:0,opacity:1,delay:1.2});
               TweenMax.fromTo(".arm-right", 1, { rotation: -40,transformOrigin:"right top"}, {rotation: -37}).repeat(-1);
               TweenMax.fromTo(".laptop-light", 1, { opacity:0.3}, {opacity:1}).repeat(-1);
 
@@ -249,9 +258,9 @@
                 TweenMax.to(".latest",0.6,{transform:"translateX(0)"});
                 TweenMax.to(".projects",0.6,{transform:"translateX(0)",delay:0.3});
                 TweenMax.to(".view--all--button",0.5,{transform:"translateX(0)",delay:0.5});
-                TweenMax.to(".project--first",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
-                TweenMax.to(".project--second",0.6,{transform:"translateY(0)",opacity:0.3,delay:0.9});
-                TweenMax.to(".project--third",0.6,{transform:"translateY(0)",opacity:0.07,delay:1.2});
+                TweenMax.to(".project--second",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
+                TweenMax.to(".project--first",0.6,{transform:"translateY(0)",opacity:1,delay:0.9});
+                TweenMax.to(".project--third",0.6,{transform:"translateY(0)",opacity:1,delay:1.2});
             }
             if(destination.index === 2){
                 disableScroll();

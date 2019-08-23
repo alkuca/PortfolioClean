@@ -467,6 +467,7 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
+  width: 521px;
 }
 
 .latest--project--description h2,p{
@@ -534,29 +535,47 @@ body{
   left: 0;
 }
 
+.project--first:hover{
+  left:15%;
+  transition:left 0.2s;
+}
+.project--second:hover{
+  left:15%;
+  transition:left 0.2s;
+}
+.project--third:hover{
+  left:15%;
+  transition:left 0.2s;
+}
+
 .project--first{
   position: absolute;
-  left: 15%;
-  top: 40%;
+  left: 20%;
+  top: 44%;
   opacity: 0;
   transform: translateY(200px);
+  transition:left 0.2s;
 }
 
 .project--second{
   position: absolute;
-  left: 30%;
+  left: 20%;
   opacity: 0;
-  top: 60%;
+  top: 22%;
   transform: translateY(200px);
+  transition:left 0.2s;
 }
 
 .project--third{
   position: absolute;
-  left: 30%;
+  left: 20%;
   opacity: 0;
-  top: 80%;
+  top: 66%;
   transform: translateY(200px);
+  transition:left 0.2s;
+
 }
+
 
 .email{
   transform: translateY(100px);
@@ -601,3 +620,5 @@ body{
   height: 100%;
   overflow: hidden;
 }
+
+
