@@ -32,9 +32,9 @@
         <p>Alen Kuca</p>
       </div>
       <div class="nav--navigation">
-        <div class="nav--triangle triangle--one"></div>
-        <div class="nav--triangle triangle--two"></div>
-        <div class="nav--triangle triangle--three"></div>
+        <div class="nav--triangle triangle--one"><p class="triangle--number triangle--one--number">1/3</p></div>
+        <div class="nav--triangle triangle--two"><p class="triangle--number triangle--two--number">2/3</p></div>
+        <div class="nav--triangle triangle--three"><p class="triangle--number triangle--three--number">3/3</p></div>
       </div>
       <div class="nav--scroll--down">
         <p>SCROLL</p>
@@ -80,14 +80,16 @@
               </linearGradient>
             </defs>
             <g transform="translate(-780.848 -68.479)">
-              <path d="M-1267.153,5135-843.7,4569.479h86.946l238.3-297.869,37.032,37.032,125.588-185.162,227.025,421.848V5135Z" transform="translate(2048 -4055)" fill="#285487"/>
+              <path d="M-1267.153,5135-843.7,4569.479h86.946l238.3-297.869,37.032,37.032,125.588-185.162,227.025,421.848V5135Z" transform="translate(2048 -4055)" fill="#0E488D"/>
               <path d="M-2399.915,4123.479l-80.981,119.958-45.731,67.644-37.156,58.116,71.454-42.873,11.433,75.265,54.305-61.927,32.393,80.029,40.967-72.407,33.345,34.3,4.764-48.589,53.353,48.589-138.145-253.425Z"
                     transform="translate(4093 -4055)" fill="#fff" opacity="0.89"/>
               <path d="M-2563.783,6719.585l-88.84,111.23,37.289-17.764,1.2,26.449,32.19-30.785,5.51,25.653,12.9-17.246,38.4-60.011Z" transform="translate(4093 -6503)" fill="#fff" opacity="0.57"/>
               <g class="human">
-                <rect class="laptop-keyboard" width="43" height="6" rx="3" transform="translate(1160 491)" fill="url(#a)"/>
-                <rect class="laptop-screen" width="6" height="33" rx="3" transform="translate(1148.792 462.875) rotate(-19)" fill="url(#a)"/>
-                <path class="laptop-light" d="M-9593.657,6966.733l40.719-38.219,25.9,52.506-57.687,13.038Z" transform="translate(10749 -6503)" fill="url(#c)"/>
+                <g class="laptop">
+                  <rect class="laptop-keyboard" width="43" height="6" rx="3" transform="translate(1160 491)" fill="url(#a)"/>
+                  <rect class="laptop-screen" width="6" height="33" rx="3" transform="translate(1148.792 462.875) rotate(-19)" fill="url(#a)"/>
+                  <path class="laptop-light" d="M-9593.657,6966.733l40.719-38.219,25.9,52.506-57.687,13.038Z" transform="translate(10749 -6503)" fill="url(#c)"/>
+                </g>
                 <rect class="leg" width="44" height="11" rx="5.5" transform="translate(1183 503)" fill="url(#a)"/>
                 <rect class="feet-left" width="11" height="30" rx="5.5" transform="translate(1180.04 503.789) rotate(-6)" fill="url(#a)"/>
                 <rect class="feet-right" width="11" height="30" rx="5.5" transform="translate(1180.04 503.789) rotate(-6)" fill="url(#a)"/>
@@ -121,6 +123,7 @@
                 <a href="https://pure-tundra-23885.herokuapp.com/"/>
                   <img style="width:215px" class="latest--project--image--main" alt="skripte" src="./img/skripteLogo.png">
                 </a>
+                <img class="project--image" src="./img/skripte.PNG"/>
               </div>
               <p class="latest--project--subtitle">a document sharing web application.</p>
             </div>
@@ -130,6 +133,7 @@
                 <a href="https://www.altposit.com"/>
                   <img class="latest--project--image--main" alt="altposit" src="./img/altpositLogo.png">
                 </a>
+                <img class="project--image" src="./img/altposit.PNG"/>
               </div>
               <p class="latest--project--subtitle">a personal cryptocurrency portfolio.</p>
             </div>
@@ -139,6 +143,7 @@
                 <a href="https://gameofthronesquiz2019.000webhostapp.com"/>
                   <img style="width:220px;" class="latest--project--image--main" alt="gameofthronesquiz" src="./img/gotLogo.png">
                 </a>
+                <img class="project--image" src="./img/got.PNG"/>
               </div>
               <p class="latest--project--subtitle">a game of thrones quiz.</p>
             </div>
@@ -210,6 +215,7 @@
 
 
     new fullpage("#fullpage", {
+        anchors:['home', 'projects', 'contact'],
         autoScrolling:true,
         scrollBar: false,
         lazyLoading:true,
@@ -220,55 +226,68 @@
               TweenMax.to(".name--subtitle",0.2,{transform:"translateX(-500px)",delay:0.2});
               TweenMax.to(".mountain",0.6,{transform:"translateY(100%) translateX(100%)"});
               TweenMax.to(".human",0.5,{transform:"translateY(20px)",opacity:0});
-              TweenMax.to(".triangle--one",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+              TweenMax.to(".triangle--one",0.3,{width:40, backgroundColor:"white"});
+              TweenMax.to(".triangle--one--number",0.1,{opacity:0});
+              TweenMax.to(".line",0.5,{width:0});
           }
             if(origin.index === 1){
-                TweenMax.to(".triangle--two",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+                TweenMax.to(".triangle--two",0.3,{width:40, backgroundColor:"white"});
+                TweenMax.to(".triangle--two--number",0.1,{opacity:0});
                 TweenMax.to(".latest",0.2,{transform:"translateX(-700px)"});
                 TweenMax.to(".projects",0.2,{transform:"translateX(-700px)",delay:0.1});
                 TweenMax.to(".view--all--button",0.2,{transform:"translateX(-500px)",delay:0.2});
                 TweenMax.to(".project--first",0.2,{transform:"translateY(200px)",opacity:0,delay:0.1});
                 TweenMax.to(".project--second",0.2,{transform:"translateY(200px)",opacity:0,delay:0.2});
                 TweenMax.to(".project--third",0.2,{transform:"translateY(200px)",opacity:0});
+                TweenMax.to(".line",0.5,{width:0});
             }
             if(origin.index === 2){
-                TweenMax.to(".triangle--three",0.3,{  borderLeft:"13px solid white", borderTop:"10px solid transparent", borderBottom:"10px solid transparent"});
+                TweenMax.to(".triangle--three",0.3,{width:40, backgroundColor:"white"});
+                TweenMax.to(".triangle--three--number",0.1,{opacity:0});
                 TweenMax.to(".touch",0.2,{transform:"translateX(-900px)"});
                 TweenMax.to(".email",0.2,{transform:"translateY(100px)",opacity:0,delay:0.2});
                 TweenMax.to(".fb",0.2,{transform:"translateY(100px)",opacity:0,delay:0.1});
                 TweenMax.to(".gh",0.2,{transform:"translateY(100px)",opacity:0});
+                TweenMax.to(".line",0.5,{width:0});
             }
         },
         afterLoad: function(origin, destination, direction){
           if(destination.index === 0){
               disableScroll();
-              TweenMax.to(".triangle--one",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+              TweenMax.to(".triangle--one",0.3,{width:60, backgroundColor:"#FF4D4D"});
+              TweenMax.to(".triangle--one--number",0.3,{opacity:1,delay:0.3});
               TweenMax.to(".title--line--one",0.5,{transform:"translateX(0)"});
               TweenMax.to(".title--line--two",0.5,{transform:"translateX(0)",delay:0.25});
               TweenMax.to(".name--subtitle",0.5,{transform:"translateX(0)",delay:0.5});
               TweenMax.to(".mountain",0.5,{transform:"translateY(0) translateX(0)",delay:0.75});
-              TweenMax.fromTo(".human", 0.7, {y:-15,opacity:0}, {y:0,opacity:1,delay:1.2});
-              TweenMax.fromTo(".arm-right", 1, { rotation: -40,transformOrigin:"right top"}, {rotation: -37}).repeat(-1);
-              TweenMax.fromTo(".laptop-light", 1, { opacity:0.3}, {opacity:1}).repeat(-1);
-
+              TweenMax.fromTo(".human", 0.7, {y:-30,opacity:0}, {y:0,opacity:1,delay:1.2 ,ease: Bounce.easeOut});
+              TweenMax.fromTo(".arm-right", 1, { rotation: -40,transformOrigin:"right top"}, {rotation: -37,delay:1.8}).repeat(-1);
+              TweenMax.fromTo(".laptop-light", 1, { opacity:0.3}, {opacity:1,delay:1.8}).repeat(-1);
+              TweenMax.to(".line",0.5,{width:46,delay:1});
+              TweenMax.to(".nav--scroll--down",0.5,{opacity:1});
           }
             if(destination.index === 1){
                 disableScroll();
-                TweenMax.to(".triangle--two",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+                TweenMax.to(".triangle--two",0.3,{width:60, backgroundColor:"#FF4D4D"});
+                TweenMax.to(".triangle--two--number",0.3,{opacity:1,delay:0.3});
                 TweenMax.to(".latest",0.6,{transform:"translateX(0)"});
                 TweenMax.to(".projects",0.6,{transform:"translateX(0)",delay:0.3});
                 TweenMax.to(".view--all--button",0.5,{transform:"translateX(0)",delay:0.5});
                 TweenMax.to(".project--second",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
                 TweenMax.to(".project--first",0.6,{transform:"translateY(0)",opacity:1,delay:0.9});
                 TweenMax.to(".project--third",0.6,{transform:"translateY(0)",opacity:1,delay:1.2});
+                TweenMax.to(".line",0.5,{width:46,delay:1});
+                TweenMax.to(".nav--scroll--down",0.5,{opacity:1});
             }
             if(destination.index === 2){
                 disableScroll();
-                TweenMax.to(".triangle--three",0.3,{  borderLeft:"16px solid #FF4D4D", borderTop:"13px solid transparent", borderBottom:"13px solid transparent"});
+                TweenMax.to(".triangle--three",0.3,{width:60, backgroundColor:"#FF4D4D"});
+                TweenMax.to(".triangle--three--number",0.3,{opacity:1,delay:0.3});
                 TweenMax.to(".touch",0.75,{transform:"translateX(0)"});
                 TweenMax.to(".email",0.6,{transform:"translateY(0)",opacity:1,delay:0.6});
                 TweenMax.to(".fb",0.6,{transform:"translateY(0)",opacity:1,delay:0.9});
                 TweenMax.to(".gh",0.6,{transform:"translateY(0)",opacity:1,delay:1.2});
+                TweenMax.to(".nav--scroll--down",0.5,{opacity:0});
             }
         },
     })

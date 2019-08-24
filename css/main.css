@@ -345,19 +345,21 @@ body{
 }
 
 .nav--triangle{
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 13px solid white;
+  width: 40px;
+  height: 6px;
   margin: 10px 0;
+  background: white;
+  position: relative;
 }
 
-.nav--triangle--active{
-  border-left: 16px solid #FF4D4D;
-  border-top: 13px solid transparent;
-  border-bottom: 13px solid transparent;
+.triangle--number{
+  margin: 0;
+  position: absolute;
+  right: -40px;
+  top: -9px;
+  opacity: 0;
 }
+
 
 .nav--scroll--down{
   transform: rotate(90deg);
@@ -505,6 +507,7 @@ body{
   background: #FF4D4D;
 }
 
+
 .vertical--line--project{
   width: 55px;
   height: 6px;
@@ -546,6 +549,7 @@ body{
 .project--third:hover{
   left:15%;
   transition:left 0.2s;
+
 }
 
 .project--first{
@@ -573,9 +577,23 @@ body{
   top: 66%;
   transform: translateY(200px);
   transition:left 0.2s;
-
 }
 
+.project--third:hover .project--image{
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
+}
+.project--second:hover .project--image{
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
+}
+.project--first:hover .project--image{
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
+}
 
 .email{
   transform: translateY(100px);
@@ -621,4 +639,15 @@ body{
   overflow: hidden;
 }
 
+
+.project--image {
+  position: absolute;
+  width: 300px;
+  top: -70px;
+  right: -180px;
+  z-index: -1;
+  opacity: 0;
+  transform: skewY(10deg);
+  box-shadow: 10px -11px 8px #00000015;
+}
 
