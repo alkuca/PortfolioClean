@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/alkuca/PortfolioClean#readme",
   "dependencies": {
-    "fullpage.js": "^3.0.7"
+    "fullpage.js": "^4.0.5"
   }
 }
